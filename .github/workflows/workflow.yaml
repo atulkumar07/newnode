@@ -20,4 +20,6 @@ jobs:
         steps:
         - name: Deploy
           run: echo "Deploying"
+        - name: Setting context
+          run: echo "Context::::${{ toJSON(github) }}"
            
